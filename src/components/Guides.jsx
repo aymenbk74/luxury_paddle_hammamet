@@ -1,46 +1,28 @@
 import './Guides.css';
+import minouImg from '../assets/minou.png';
+import justinImg from '../assets/justin.png';
 
 export default function Guides() {
   const guides = [
     {
       id: 1,
-      name: 'Ahmed Ben Ali',
+      name: 'Amine Lakhdhar',
       title: 'Senior Guide',
       experience: '12 years',
       specialty: 'Advanced Tours',
-      avatar: '👨‍🦱',
-      bio: 'Expert paddler and certified instructor with extensive knowledge of Hammamet\'s waters.',
+      avatar: minouImg,
+      bio: 'i take pride in my work and strive to provide the best experience for all my clients.',
       languages: ['Arabic', 'French', 'English']
     },
     {
       id: 2,
-      name: 'Fatima Zahra',
+      name: 'Abdelkader Attia',
       title: 'Lead Guide',
       experience: '8 years',
       specialty: 'Family Tours',
-      avatar: '👩‍🦰',
-      bio: 'Passionate about introducing families to the joy of paddleboarding safely.',
-      languages: ['Arabic', 'French', 'English', 'Italian']
-    },
-    {
-      id: 3,
-      name: 'Karim Hassan',
-      title: 'Guide',
-      experience: '5 years',
-      specialty: 'Sunset Tours',
-      avatar: '👨‍🦲',
-      bio: 'Creates magical experiences with stunning photography and storytelling.',
-      languages: ['Arabic', 'French', 'English']
-    },
-    {
-      id: 4,
-      name: 'Leila Mohamed',
-      title: 'Guide',
-      experience: '6 years',
-      specialty: 'Snorkeling Tours',
-      avatar: '👩‍🦱',
-      bio: 'Marine biologist and certified snorkeling instructor. Shares amazing marine life facts.',
-      languages: ['Arabic', 'French', 'English', 'German']
+      avatar: justinImg,
+      bio: 'No one knows the beaches of Hammamet better than Abdelkader.',
+      languages: ['Arabic', 'French', 'English', 'Portuguese']
     }
   ];
 
@@ -55,7 +37,7 @@ export default function Guides() {
         <div className="guides-grid">
           {guides.map((guide) => (
             <div key={guide.id} className="guide-card">
-              <div className="guide-avatar">{guide.avatar}</div>
+              <img src={guide.avatar} alt={guide.name} className="guide-avatar" />
               <h3 className="guide-name">{guide.name}</h3>
               <p className="guide-title">{guide.title}</p>
               <div className="guide-badge">{guide.experience} experience</div>

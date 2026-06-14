@@ -6,7 +6,7 @@ export default function Header() {
       <div className="container">
         <div className="nav-wrapper">
           <div className="logo">
-            <span className="logo-icon">🏄‍♂️</span>
+            <img className="logo-icon" src="src/assets/logo_paddle.jpg" alt="Luxury Paddle Logo" />
             <span className="logo-text">Luxury Paddle</span>
           </div>
           <nav className="nav">
