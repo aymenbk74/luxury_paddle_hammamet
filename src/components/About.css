@@ -1,6 +1,7 @@
 .about {
   padding: 5rem 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('src/assets/sunset.avif');
+  /* Updated path to correctly find the assets folder from your components folder */
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/about.avif');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -16,9 +17,10 @@
   margin-bottom: 3rem;
 }
 
+/* Made this heading white so it stands out against the dark sunset background */
 .about-section h2 {
   font-size: 2.2rem;
-  color: #333;
+  color: #ffffff;
   margin: 0 0 2rem 0;
   font-weight: 800;
 }
@@ -31,7 +33,7 @@
 }
 
 .features-grid {
-  display:block;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 5rem;
   margin-bottom: 5rem;
@@ -42,7 +44,7 @@
   gap: 1rem;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f4f7fa 0%, #ffffff 100%);
-  border-radius: 12px;
+  border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
@@ -74,6 +76,13 @@
 }
 
 .about-columns {
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-columns2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
@@ -82,9 +91,18 @@
 
 .about-column {
   padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  background: linear-gradient(135deg, rgb(255,255 ,255 , 0.7) 0%, rgba(192, 192, 192, 0.7) 100%);
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+/* Added specific rule to keep card description text dark gray and legible */
+.about-column p {
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .about-column h3 {
@@ -124,7 +142,9 @@
 }
 
 .meeting-point {
-  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  background-image: url('../assets/map.png');
+  background-size: cover;
+  background-position: center;
   padding: 2rem;
   border-radius: 12px;
   border-left: 4px solid #4caf50;
@@ -132,6 +152,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .location {
@@ -163,13 +184,23 @@
 
 .info-text {
   font-size: 0.95rem;
-  color: #555;
+  color: #333333;
   line-height: 1.8;
   padding: 1.5rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
   border-radius: 8px;
   border-left: 4px solid #667eea;
   margin: 1rem 0;
+}
+
+.info-text h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.info-text p {
+  margin: 0;
 }
 
 @media (max-width: 768px) {
