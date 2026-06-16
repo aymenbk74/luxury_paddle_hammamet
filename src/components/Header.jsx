@@ -13,7 +13,7 @@ export default function Header() {
             <a href="#home" className="nav-link">Home</a>
             <a href="#tours" className="nav-link">Tours</a>
             <a href="#guides" className="nav-link">Guides</a>
-            <a href="#booking" className="nav-link">Book Now</a>
+            <a href="#availability" className="nav-link">Availability</a>
             <a href="#contact" className="nav-link">Contact</a>
           </nav>
           <button className="cta-button">Get Started</button>

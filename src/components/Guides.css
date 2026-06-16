@@ -1,6 +1,6 @@
 .guides {
   padding: 5rem 2rem;
-  background: white;
+  background: url('../assets/sunset_paddle.avif') no-repeat center center/cover;
 }
 
 .guides-grid {
