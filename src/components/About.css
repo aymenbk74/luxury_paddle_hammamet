@@ -93,13 +93,13 @@
   padding: 2rem;
   background: linear-gradient(135deg, rgb(255,255 ,255 , 0.7) 0%, rgba(192, 192, 192, 0.7) 100%);
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgb(9, 195, 219, 0.5);
   margin-bottom: 1.5rem;
 }
 
 /* Added specific rule to keep card description text dark gray and legible */
 .about-column p {
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
@@ -108,9 +108,9 @@
 .about-column h3 {
   font-size: 1.3rem;
   margin: 0 0 1.5rem 0;
-  color: #333;
+  color: #000000;
   font-weight: 700;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid rgb(9, 195, 219);
   padding-bottom: 0.75rem;
 }
 
@@ -189,7 +189,7 @@
   padding: 1.5rem;
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
   border-radius: 8px;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid rgb(9, 195, 219);
   margin: 1rem 0;
 }
 

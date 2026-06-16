@@ -101,6 +101,11 @@
   letter-spacing: 0.5px;
 }
 
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .language-tags {
   display: flex;
   flex-wrap: wrap;
@@ -147,6 +152,6 @@
   }
 
   .guide-card {
-    padding: 2rem;
+    padding: 3rem;
   }
 }

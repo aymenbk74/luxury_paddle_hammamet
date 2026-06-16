@@ -9,8 +9,8 @@ export default function Footer() {
             <h3>About Luxury Paddle</h3>
             <p>We provide unforgettable paddleboarding experiences in the beautiful waters of Hammamet, Tunisia. Our expert guides are dedicated to making your adventure safe and memorable.</p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook">f</a>
-              <a href="#" aria-label="Instagram">📷</a>
+              <a href="https://www.facebook.com/profile.php?id=61590940465817" aria-label="Facebook">f</a>
+              <a href="https://www.instagram.com/luxury_paddle_hammamet/" aria-label="Instagram">📷</a>
               <a href="#" aria-label="Twitter">𝕏</a>
               <a href="#" aria-label="TikTok">♪</a>
             </div>
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
-                <p>+216 123 456 789</p>
+                <p>+216 26 063 374</p>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>

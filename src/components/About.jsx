@@ -62,7 +62,7 @@ export default function About() {
             <p className="location">
               Meeting point: <strong>The Medina</strong>
             </p>
-            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="maps-link">
+            <a href="https://maps.app.goo.gl/uMhTCsFfmBZL9Ua68" target="_blank" rel="noopener noreferrer" className="maps-link">
               Open in Google Maps →
             </a>
           </div>
