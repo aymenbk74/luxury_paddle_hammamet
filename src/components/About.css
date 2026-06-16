@@ -1,11 +1,28 @@
 .about {
   padding: 5rem 2rem;
-  /* Updated path to correctly find the assets folder from your components folder */
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../assets/about.avif');
   background-size: cover;
   background-position: center;
-  background-attachment:local;
+  background-attachment: local;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+/* NEW OVERLAY LAYER: Placed at the top of the about section */
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Depth of the seamless blending zone */
+  
+  /* Blends smoothly from the exact solid color above into pure transparency */
+  background: linear-gradient(to bottom, #242E38 0%, transparent 100%);
+  
+  z-index: 2;
+  pointer-events: none;
 }
 
 .about-wrapper {

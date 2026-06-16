@@ -1,7 +1,31 @@
 .guides {
   padding: 5rem 2rem;
-  background: url('../assets/sunset_paddle.avif') no-repeat center center/cover;
+  background: linear-gradient(135deg, rgba(61, 74, 89, 0.85), rgba(251, 192, 103, 0.85)), 
+              url('../assets/sunset_paddle.avif') no-repeat center center/cover;
+              
+  position: relative;
+  z-index: 1;
 }
+
+/* You can keep your bottom .guides::after code if it is blending into the availability section below it! */
+
+/* NEW OVERLAY LAYER: Creates the transition zone at the bottom of the guides section */
+.guides::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Adjust height to make the blend zone shorter or taller */
+  
+  /* Blends from transparent right into the exact starting color of the availability section */
+  background: linear-gradient(to bottom, transparent 0%, #cda76b 100%);
+  
+  z-index: 2; /* Ensures it sits on top of the sunset image background */
+  pointer-events: none; /* Keeps buttons inside the guides section clickable */
+}
+
+/* Remove or delete the old .guides::before block completely! */
 
 .guides-grid {
   display: grid;

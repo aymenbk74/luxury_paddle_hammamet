@@ -1,7 +1,10 @@
 .availability {
   padding: 5rem 2rem;
-  background: linear-gradient( rgb(164, 152, 131) 0%, #242E38 70%);
+  /* The gradient now completes its blend within the first 400px, leaving the bottom solid #242E38 */
+  background: linear-gradient(to bottom, #cda76b 0%, #242E38 400px);
+  background-color: #242E38; /* Failsafe solid color for the rest of the section */
   min-height: 100vh;
+  position: relative;
 }
 
 .container {

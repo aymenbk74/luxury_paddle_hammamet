@@ -1,6 +1,27 @@
 .tours {
   padding: 5rem 2rem;
-  background: white;
+  background: linear-gradient(to right, #333333 0%, #6c6c66 30%, #8c8069 55%, #ac946c 80%, #cda76b 100%);
+  position: relative;   
+}
+
+/* THE SEAMLESS FIX: The overlay strip now fades down perfectly */
+.tours::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;      /* Pulls it down over the top of the .guides section */
+  left: 0;
+  width: 100%;
+  height: 80px;       /* Match your transition zone height */
+  
+  /* Keep the exact horizontal colors matching the section above */
+  background: linear-gradient(to right, #333333 0%, #6c6c66 30%, #8c8069 55%, #ac946c 80%, #cda76b 100%);
+  
+  /* MAGIC TRICK: This masks the background layer to fade out from top to bottom */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  
+  z-index: 10;        
+  pointer-events: none; 
 }
 
 .tours-content {
