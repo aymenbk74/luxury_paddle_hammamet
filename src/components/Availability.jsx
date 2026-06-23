@@ -7,7 +7,7 @@ export default function Availability() {
   // Single tour data
   const tourData = {
     name: '🏄‍♂️ Paddleboard Tour',
-    price: '$65',
+    price: '$30 per person',
     duration: '75 minutes',
     times: ['5:00 - 6:30', '6:30 - 8:00', '8:00 - 9:30','9:30 - 11:00', '11:00 - 12:30', '12:30 - 14:00', '14:00 - 15:30', '15:30 - 17:00', '17:00 - 18:30', '18:30 - 20:00']
   };
@@ -140,12 +140,12 @@ export default function Availability() {
           <div className="info-box">
             <span className="info-icon">✓</span>
             <h4>Easy Booking</h4>
-            <p>Select a time and we'll guide you through the booking process</p>
+            <p>check availability and book your spot by contacting us on whatsapp</p>
           </div>
           <div className="info-box">
             <span className="info-icon">📱</span>
-            <h4>Instant Confirmation</h4>
-            <p>Receive confirmation and details via email and SMS</p>
+            <h4>Instant Booking</h4>
+            <p>book now and pay later</p>
           </div>
           <div className="info-box">
             <span className="info-icon">🔄</span>
@@ -155,7 +155,7 @@ export default function Availability() {
           <div className="info-box">
             <span className="info-icon">💬</span>
             <h4>Support</h4>
-            <p>Questions? Our team is here to help: +216 123 456 789</p>
+            <p>Questions? We can help! Call us at +216 26 063 374</p>
           </div>
         </div>
       </div>

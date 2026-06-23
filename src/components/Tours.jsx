@@ -25,7 +25,6 @@ export default function Tours() {
               we create unforgettable memories on the water. All equipment is provided, including premium paddle boards, 
               safety gear, and refreshments to keep you energized throughout your adventure.
             </p>
-            <button className="tours-btn">Browse Our Tours</button>
           </div>
         </div>
       </div>

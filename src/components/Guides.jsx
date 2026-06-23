@@ -23,7 +23,7 @@ export default function Guides() {
       specialty: 'Family Tours',
       avatar: justinImg,
       bio: 'No one knows the beaches of Hammamet better than Abdelkader.',
-      languages: ['Arabic', 'French', 'English', 'Portuguese'],
+      languages: ['Arabic', 'French', 'English'],
       phone: '21628223239' // 1. Added international phone number
     }
   ];
