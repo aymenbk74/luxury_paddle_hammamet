@@ -22,8 +22,8 @@ export default function Footer() {
               <li><a href="#home">Home</a></li>
               <li><a href="#tours">Our Tours</a></li>
               <li><a href="#guides">Our Guides</a></li>
-              <li><a href="#booking">Book Now</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#availability">Availability</a></li>
+              <li><a href="#reviews">Customer Reviews</a></li>
             </ul>
           </div>
 

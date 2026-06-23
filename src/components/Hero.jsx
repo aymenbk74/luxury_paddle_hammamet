@@ -1,6 +1,26 @@
+import { useState, useEffect } from 'react';
 import './Hero.css';
 
 export default function Hero() {
+  const [averageRating, setAverageRating] = useState(0);
+
+  useEffect(() => {
+    const fetchAverageRating = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/reviews/average-rating');
+        const data = await response.json();
+        setAverageRating(data.averageRating || 0);
+      } catch (error) {
+        console.error('Failed to fetch average rating:', error);
+      }
+    };
+
+    fetchAverageRating();
+    // Refresh rating every 10 seconds
+    const interval = setInterval(fetchAverageRating, 10000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="home" className="hero">
       <div className="hero-content">
@@ -9,8 +29,12 @@ export default function Hero() {
           Experience unforgettable paddleboarding adventures with expert guides along Tunisia's most beautiful coastline
         </p>
         <div className="hero-buttons">
-          <button className="btn btn-primary">Book Your Tour Today</button>
-          <button className="btn btn-secondary">Learn More</button>
+          <a href="#guides">
+            <button className="btn btn-primary">Book Your Tour Today</button>
+          </a>
+          <a href="#about">
+            <button className="btn btn-secondary">Learn More</button>
+          </a>
         </div>
         <div className="hero-stats">
           <div className="stat">
@@ -18,11 +42,11 @@ export default function Hero() {
             <span className="stat-label">Happy Adventurers</span>
           </div>
           <div className="stat">
-            <span className="stat-number">4.9★</span>
+            <span className="stat-number">{averageRating > 0 ? `${averageRating}★` : '—'}</span>
             <span className="stat-label">Average Rating</span>
           </div>
           <div className="stat">
-            <span className="stat-number">10+</span>
+            <span className="stat-number">2</span>
             <span className="stat-label">Expert Guides</span>
           </div>
         </div>

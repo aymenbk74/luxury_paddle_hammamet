@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Tours from './components/Tours';
 import Guides from './components/Guides';
 import Availability from './components/Availability';
+import Review from './components/Review';
 import About from './components/About';
 import Footer from './components/Footer';
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
       <Guides />
       <Availability />
       <About />
+      <Review />
       <Footer />
     </div>
   );

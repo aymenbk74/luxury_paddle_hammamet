@@ -1,8 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Availability.css';
 
 export default function Availability() {
   const [selectedDate, setSelectedDate] = useState('');
+  const [bookedSlots, setBookedSlots] = useState({});
+
+  // Load booked slots from API when date changes
+  useEffect(() => {
+    if (!selectedDate) return;
+
+    const fetchBookedSlots = async () => {
+      try {
+        const response = await fetch(`http://localhost:5000/api/booked-slots/${selectedDate}`);
+        if (!response.ok) throw new Error('Failed to fetch slots');
+        const slots = await response.json();
+        const slotsMap = {};
+        slots.forEach(slot => {
+          if (slot.isBooked) {
+            slotsMap[`${slot.date}-${slot.time}`] = true;
+          }
+        });
+        setBookedSlots(slotsMap);
+      } catch (error) {
+        console.error('Failed to fetch booked slots:', error);
+      }
+    };
+
+    fetchBookedSlots();
+
+    // Refresh booked slots every 3 seconds
+    const interval = setInterval(fetchBookedSlots, 3000);
+    return () => clearInterval(interval);
+  }, [selectedDate]);
 
   // Single tour data
   const tourData = {
@@ -30,17 +59,11 @@ export default function Availability() {
     return date.getDay() !== 1; // Monday = 1
   };
 
-  // Check if time is available (mock logic: some times might be unavailable)
+  // Check if time is available (check localStorage for booked slots)
   const isTimeAvailable = (time) => {
-    // Simulate some unavailable times
-    const unavailableTimes = ['9:30 AM', '2:30 PM'];
-    return !unavailableTimes.includes(time);
-  };
-
-  const handleTimeClick = (time) => {
-    if (isTimeAvailable(time)) {
-      alert(`You selected ${tourData.name} at ${time}. Please fill out your details to complete the booking!`);
-    }
+    if (!selectedDate) return true;
+    const key = `${selectedDate}-${time}`;
+    return !bookedSlots[key];
   };
 
   return (
