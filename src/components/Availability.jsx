@@ -36,7 +36,8 @@ export default function Availability() {
   // Single tour data
   const tourData = {
     name: '🏄‍♂️ Paddleboard Tour',
-    price: '$30 per person',
+    price: '40 DT (12 €) per person',
+    price2: '30 DT (9 €) per person',
     duration: '75 minutes',
     times: ['5:00 - 6:30', '6:30 - 8:00', '8:00 - 9:30','9:30 - 11:00', '11:00 - 12:30', '12:30 - 14:00', '14:00 - 15:30', '15:30 - 17:00', '17:00 - 18:30', '18:30 - 20:00']
   };
@@ -106,8 +107,12 @@ export default function Availability() {
                 <span className="detail-value">{tourData.duration}</span>
               </div>
               <div className="detail-item">
-                <span className="detail-label">Price:</span>
+                <span className="detail-label">Price (with refreshments):</span>
                 <span className="detail-value">{tourData.price}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">Price (without refreshments):</span>
+                <span className="detail-value">{tourData.price2}</span>
               </div>
             </div>
           </div>
@@ -168,7 +173,7 @@ export default function Availability() {
           <div className="info-box">
             <span className="info-icon">📱</span>
             <h4>Instant Booking</h4>
-            <p>book now and pay later</p>
+            <p>book now and pay later at the beach the day of the tour</p>
           </div>
           <div className="info-box">
             <span className="info-icon">🔄</span>

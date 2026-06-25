@@ -1,6 +1,8 @@
 .reviews {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+  background-image: url('../assets/ground.png');
+  background-repeat: repeat;
 }
 
 .reviews-wrapper {
@@ -20,7 +22,7 @@
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0);
   margin-bottom: 3rem;
 }
 
@@ -143,11 +145,11 @@
 }
 
 .review-card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0);
   border-left: 4px solid #ffc107;
   transition: box-shadow 0.3s ease;
 }
@@ -227,4 +229,21 @@
   .star {
     font-size: 2rem;
   }
+}
+
+/* View more button */
+.view-more {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: color 0.15s ease, transform 0.12s ease;
+}
+
+.view-more:hover {
+  color: #2b6fb2;
+  transform: translateY(-2px);
 }

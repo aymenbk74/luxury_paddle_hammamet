@@ -13,19 +13,19 @@ export default function About() {
             {/* These first lines are now neatly arranged inside their own distinct cards */}
             <div className="about-columns" style={{ marginBottom: '3rem' }}>
               <div className="about-column">
-                <p><strong>Free cancellation:</strong> Cancel up to 24 hours in advance for a full refund.</p>
+                <p><strong>Photoshoot</strong> We offer professional photoshoot sessions during the tour.</p>
               </div>
               <div className="about-column">
-                <p><strong>Reserve now & pay later:</strong> Keep your travel plans flexible — book your spot and pay nothing today.</p>
+                <p><strong>During the tour</strong> We can take you anywhere you want to go along the coast or let us guide you.</p>
               </div>
               <div className="about-column">
-                <p><strong>Duration:</strong> 2 hours. Check availability to see starting times.</p>
+                <p><strong>Duration:</strong> The tour lasts approximately 75 minutes and the instructions briefing lasts 15 minutes.</p>
               </div>
               <div className="about-column">
-                <p><strong>Live tour guide:</strong> Our experienced guides speak French, English, Italian, Arabic, and Portuguese.</p>
+                <p><strong>Live tour guide:</strong> Our experienced guides speak English, French and Arabic.</p>
               </div>
               <div className="about-column">
-                <p><strong>Small group:</strong> Limited to 6 participants to ensure a personalized experience.</p>
+                <p><strong>Small group:</strong> Limited to 4 participants to ensure a personalized experience.</p>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function About() {
             <div className="about-column">
               <h3>Includes</h3>
               <p>
-                This tour includes energy drinks, soft drinks, water, pizzas, sandwiches, and transport (optional). 
+                The tour with refreshments includes soft drinks and sandwiches. 
                 Everything you need for a comfortable and enjoyable paddleboarding experience.
               </p>
             </div>
@@ -51,7 +51,7 @@ export default function About() {
             <div className="about-column">
               <h3>What to bring</h3>
               <p>
-                Please bring a towel and beachwear. We provide all paddleboarding equipment, but personal comfort items 
+                Please bring a towel and beachwear. We provide all paddleboarding equipment including life jackets, but personal comfort items 
                 are essential for enjoying your experience.
               </p>
             </div>

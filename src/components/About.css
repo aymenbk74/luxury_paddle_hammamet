@@ -9,6 +9,21 @@
   z-index: 1;
 }
 
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust height to make the blend zone shorter or taller */
+  
+  /* Blends from transparent right into the exact starting color of the availability section */
+  background: linear-gradient(to bottom, transparent 0%, #f5f7fa 100%);
+  
+  z-index: 2; /* Ensures it sits on top of the sunset image background */
+  pointer-events: none; /* Keeps buttons inside the guides section clickable */
+}
+
 /* NEW OVERLAY LAYER: Placed at the top of the about section */
 .about::before {
   content: "";

@@ -8,10 +8,10 @@ export default function Guides() {
       id: 1,
       name: 'Amine Lakhdhar',
       title: 'Senior Guide',
-      experience: '12 years',
-      specialty: 'Advanced Tours',
+      experience: '6 years',
+      specialty: 'All Tours',
       avatar: minouImg,
-      bio: 'i take pride in my work and strive to provide the best experience for all my clients.',
+      bio: 'I take pride in my work and strive to provide the best experience for all my clients.',
       languages: ['Arabic', 'French', 'English'],
       phone: '21626063374' // 1. Added international phone number (Example: Tunisia code 216)
     },
@@ -19,10 +19,10 @@ export default function Guides() {
       id: 2,
       name: 'Abdelkader Attia',
       title: 'Lead Guide',
-      experience: '8 years',
-      specialty: 'Family Tours',
+      experience: '4 years',
+      specialty: 'All Tours',
       avatar: justinImg,
-      bio: 'No one knows the beaches of Hammamet better than Abdelkader.',
+      bio: 'I think that paddleboarding is not just a sport, but a way to connect with nature.',
       languages: ['Arabic', 'French', 'English'],
       phone: '21628223239' // 1. Added international phone number
     }

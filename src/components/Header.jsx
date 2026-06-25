@@ -27,7 +27,7 @@ export default function Header() {
             <a href="#reviews" className="nav-link">Reviews</a>
             <a href="#contact" className="nav-link">Contact</a>
           </nav>
-          <button className="cta-button">Get Started</button>
+          <button className="cta-button">Get a 50% Discount by booking <br /> through our website</button>
         </div>
       </div>
     </header>

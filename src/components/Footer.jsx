@@ -11,8 +11,6 @@ export default function Footer() {
             <div className="social-links">
               <a href="https://www.facebook.com/profile.php?id=61590940465817" aria-label="Facebook">f</a>
               <a href="https://www.instagram.com/luxury_paddle_hammamet/" aria-label="Instagram">📷</a>
-              <a href="#" aria-label="Twitter">𝕏</a>
-              <a href="#" aria-label="TikTok">♪</a>
             </div>
           </div>
 
@@ -31,10 +29,6 @@ export default function Footer() {
             <h3>Information</h3>
             <ul>
               <li><a href="#about">About Us</a></li>
-              <li><a href="#safety">Safety Guidelines</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#privacy">Privacy Policy</a></li>
-              <li><a href="#terms">Terms & Conditions</a></li>
             </ul>
           </div>
 
@@ -50,12 +44,8 @@ export default function Footer() {
                 <p>+216 26 063 374</p>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">✉️</span>
-                <p>info@luxurypaddle.com</p>
-              </div>
-              <div className="contact-item">
                 <span className="contact-icon">🕐</span>
-                <p>7 AM - 7 PM Daily</p>
+                <p>5 AM - 8 PM Daily only in summer</p>
               </div>
             </div>
           </div>
@@ -64,7 +54,7 @@ export default function Footer() {
         <div className="footer-divider"></div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Luxury Paddle. All rights reserved.</p>
+          <p>&copy; 2026 Luxury Paddle. All rights reserved.</p>
           <p>Crafted with ❤️ for paddleboarding enthusiasts</p>
         </div>
       </div>

@@ -9,6 +9,7 @@ export default function Review() {
   const [userName, setUserName] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [visibleCount, setVisibleCount] = useState(5);
 
   // Fetch reviews from API
   useEffect(() => {
@@ -74,6 +75,9 @@ export default function Review() {
           day: 'numeric' 
         })
       }, ...reviews]);
+
+      // ensure the newly published review is visible
+      setVisibleCount((c) => Math.max(c, 5));
 
       setRating(0);
       setReviewText('');
@@ -157,7 +161,7 @@ export default function Review() {
           {reviews.length > 0 && (
             <div className="reviews-list">
               <h3>Recent Reviews ({reviews.length})</h3>
-              {reviews.map((review) => (
+              {reviews.slice(0, visibleCount).map((review) => (
                 <div key={review.id} className="review-card">
                   <div className="review-header">
                     <div className="reviewer-info">
@@ -172,6 +176,17 @@ export default function Review() {
                   <p className="review-text">{review.text}</p>
                 </div>
               ))}
+
+              {visibleCount < reviews.length && (
+                <div style={{ textAlign: 'center', marginTop: '1rem' }}>
+                  <button
+                    className="view-more"
+                    onClick={() => setVisibleCount((c) => c + 5)}
+                  >
+                    View more reviews
+                  </button>
+                </div>
+              )}
             </div>
           )}
         </div>

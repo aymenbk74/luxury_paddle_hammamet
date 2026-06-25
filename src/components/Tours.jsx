@@ -12,7 +12,7 @@ export default function Tours() {
             <h2>Discover Our Paddleboarding Tours</h2>
             <p>
               Experience the crystal-clear waters of Hammamet with our expertly guided paddleboarding tours. 
-              Whether you're a beginner looking for a relaxing morning paddle or an experienced adventurer seeking 
+              Whether you're a beginner looking for a relaxing paddle or an experienced adventurer seeking 
               challenging offshore expeditions, we have the perfect tour for you.
             </p>
             <p>
@@ -21,7 +21,7 @@ export default function Tours() {
               skill level and preferences.
             </p>
             <p>
-              From sunrise paddles that paint the sky in golden hues to romantic sunset tours with champagne, 
+              From sunrise paddles that paint the sky in golden hues to romantic sunset tours, 
               we create unforgettable memories on the water. All equipment is provided, including premium paddle boards, 
               safety gear, and refreshments to keep you energized throughout your adventure.
             </p>
